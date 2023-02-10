@@ -6,7 +6,7 @@
 /*   By: tpotilli <tpotilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 10:43:49 by tpotilli          #+#    #+#             */
-/*   Updated: 2023/02/10 11:45:23 by tpotilli         ###   ########.fr       */
+/*   Updated: 2023/02/10 10:48:22 by tpotilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,8 @@ int main()
 	while(42)
 	{
 		str = get_next_line(fd);
-		printf("%s", str);
+		printf("----------avant le premier appel du main ------------\n");
+		printf("main ==> %s", str);
 		if (str == NULL)
 			break ;
 		free(str);
